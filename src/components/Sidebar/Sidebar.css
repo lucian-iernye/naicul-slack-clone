@@ -5,6 +5,12 @@
   color: white;
 }
 
+.sidebar > hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #49274b;
+}
+
 .sidebarHeader {
   display: flex;
   justify-content: space-between;
@@ -23,4 +29,24 @@
 
 .sidebarInfo {
   flex: 1;
+}
+
+.sidebarInfo > h2 {
+  font-size: 15px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.sidebarInfo > h3 {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.sidebarInfo > h3 > .MuiSvgIcon-root {
+  font-size: 14px;
+  margin-top: 1px;
+  margin-right: 2px;
+  color: green;
 }
