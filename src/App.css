@@ -1,3 +1,12 @@
+body {
+  overflow: hidden;
+}
+
 .App > h1 {
   text-align: center;
+}
+
+.AppBody {
+  display: flex;
+  height: 100vh;
 }
