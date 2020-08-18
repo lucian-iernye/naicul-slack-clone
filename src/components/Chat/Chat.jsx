@@ -20,15 +20,13 @@ const Chat = () => {
         .onSnapshot((snapshot) => setRoomDetails(snapshot.data()));
     }
 
-    if (roomId) {
-      db.collection("rooms")
-        .doc(roomId)
-        .collection("messages")
-        .orderBy("timeStamp", "asc")
-        .onSnapshot((snapshot) =>
-          setRoomMessages(snapshot.docs.map((doc) => doc.data()))
-        );
-    }
+    db.collection("rooms")
+      .doc(roomId)
+      .collection("messages")
+      .orderBy("timeStamp", "asc")
+      .onSnapshot((snapshot) =>
+        setRoomMessages(snapshot.docs.map((doc) => doc.data()))
+      );
   }, [roomId]);
 
   console.log(roomMessages);

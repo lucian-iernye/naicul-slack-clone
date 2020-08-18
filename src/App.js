@@ -30,7 +30,7 @@ function App() {
                   <Chat />
                 </Route>
                 <Route path="/">
-                  <Chat />
+                  <h1>Welcome</h1>
                 </Route>
               </Switch>
               {/* react-router -> Chat screen*/}
